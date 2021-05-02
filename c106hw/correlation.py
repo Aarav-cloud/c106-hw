@@ -3,13 +3,13 @@ import csv
 import numpy as np 
 
 def getDataSource (data_path):
- RollNo = []
+    RollNo = []
     Marks = []
     with open (data_path) as csv_file : 
         csv_reader  = csv.DictReader(csv_file)
         for row in csv_reader :
-            temperature.append (float(row["RollNo"]))
-            iceCreamSales.append (float(row["Marks"]))
+            RollNo.append (float(row["RollNo"]))
+            Marks.append (float(row["Marks"]))
 
     return {"x":RollNo,"y":Marks}
 
